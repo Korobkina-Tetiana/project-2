@@ -9,7 +9,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Fcomponent name="Chyron" />
         <Ccomponent />
   
         <img src={logo} className="App-logo" alt="logo" />
