@@ -4,7 +4,6 @@ import './App.css';
 import Fcomponent from './Fcomponent';
 import Ccomponent from './Ccomponent';
 import { Menu } from './Menu';
-import Fg from './Fg';
 
 
 function App() {
@@ -13,8 +12,7 @@ function App() {
       <header className="App-header">
         <Fcomponent />
         <Ccomponent />
-        <Menu />
-        <Fg />
+  
         <img src={logo} className="App-logo" alt="logo" />
         <p>
         Web Developer Blog
