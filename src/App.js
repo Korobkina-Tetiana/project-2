@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Fcomponent from './Fcomponent';
 import Ccomponent from './Ccomponent';
+import Fcounter from './Fcounter';
 
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Ccomponent />
-  
+        <Fcomponent />
+        <Fcounter />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
         Web Developer Blog
