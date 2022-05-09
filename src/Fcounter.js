@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Fcounter = function () {
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState(0)
 
     function increment() {
         setCount(count + 1)
@@ -19,6 +19,8 @@ const Fcounter = function () {
         </div>
       );
     }
+
+    export default Fcounter;
 
 
 
