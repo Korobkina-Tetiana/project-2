@@ -6,19 +6,35 @@ export default class Ccomponent extends Component {
     super(props)
   
     this.state = {
-       name: "David"
+       visibility: false
     }
+
+    this.handelClick = this.handelClick.bind(this);
   }
-  
+
+  handelClick() {
+    this.setState(state => ({
+      visibility: !state.visibility
+    }));
+  }
+
   render() {
-    const name = this.state.name;
+    if (this.state.visibility){
     return (
       <div>
         <h1>
-            Class component {name}
+            Now you see me
         </h1>
+        <button onClick={this.handelClick}>Click</button>
+      </div>
+    )
+  }
+  else {
+    return (
+      <div>
+        <button onClick={this.handelClick}>Click</button>
       </div>
     )
   }
 }
-Ccomponent.defaultProps = { name: 'Vojtech'}
+}
