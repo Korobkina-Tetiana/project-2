@@ -7,9 +7,10 @@ export default class Ccomponent extends Component {
       <div>
         <Menu />
         <h1>
-            Class component
+            Class component {this.props.name}
         </h1>
       </div>
     )
   }
 }
+Ccomponent.defaultProps = { name: 'Vojtech'}
