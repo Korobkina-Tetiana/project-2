@@ -5,12 +5,10 @@ const Fcounter = function () {
 
     function increment() {
         setCount((prev) => prev + 1)
-        alert(count)
     }
 
     function decrement() {
         setCount((prev) => prev - 1)
-        alert(count)
     }
 
     return (
