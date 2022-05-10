@@ -4,11 +4,13 @@ const Fcounter = function () {
     const [count, setCount] = useState(0)
 
     function increment() {
-        setCount(count + 1)
+        setCount((prev) => prev + 1)
+        alert(count)
     }
 
     function decrement() {
-        setCount(count - 1)
+        setCount((prev) => prev - 1)
+        alert(count)
     }
 
     return (
